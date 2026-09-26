@@ -10,14 +10,14 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f7f4eb;
+    background: #f7f4eb; /* Krem hangat khas Nasywa */
     color: #263328;
     line-height: 1.7;
     position: relative;
     overflow-x: hidden;
 }
 
-/* HIASAN LINGKARAN ESTETIS DI BACKGROUND */
+/* ================= HIASAN LINGKARAN ESTETIS BACKGROUND ================= */
 body::before {
     content: "";
     position: absolute;
@@ -42,16 +42,17 @@ body::after {
     z-index: -1;
 }
 
-/* HEADER */
+/* ================= HEADER UTAMA ================= */
 header {
-    background: #1e3a21;
-    color: white;
+    background: #1e3a21; /* Hijau Forest Tua */
+    color: #ffffff;
     padding: 50px 20px 35px;
     position: relative;
     overflow: hidden;
     border-bottom: 4px solid #e8dbb8;
 }
 
+/* Hiasan lingkaran transparan di dalam header */
 header::before {
     content: "";
     position: absolute;
@@ -73,28 +74,28 @@ header::before {
 .small-title {
     font-size: 12px;
     letter-spacing: 4px;
-    opacity: 0.8;
-    margin-bottom: 10px;
-    text-transform: uppercase; /* KAPITAL */
+    opacity: 0.85;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-/* JUDUL UTAMA KAPITAL + EFEK TEKS SEGAR */
 header h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 3px;
-    text-transform: uppercase; /* BIKIN NAMA JADI KAPITAL SEMUA */
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     font-weight: 800;
+    text-transform: uppercase; /* NAMA KAPITAL */
 }
 
 header h3 {
     font-weight: 600;
-    opacity: 0.85;
-    text-transform: uppercase; /* KELAS JADI KAPITAL */
-    letter-spacing: 1px;
+    opacity: 0.9;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; /* KELAS KAPITAL */
 }
 
-/* NAVIGASI */
+/* ================= NAVIGASI MENU ================= */
 nav {
     display: flex;
     gap: 25px;
@@ -105,7 +106,7 @@ nav a {
     color: #e8dbb8;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase; /* MENU JADI KAPITAL */
+    text-transform: uppercase; /* MENU KAPITAL */
     font-size: 13px;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
@@ -116,16 +117,16 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* MAIN WADAH */
+/* ================= WADAH KONTEN UTAMA ================= */
 .wadah-konten {
     max-width: 805px;
     margin: auto;
     padding: 40px 20px 60px;
 }
 
-/* HERO SECTION (Background Kuning Krem Melengkung) */
+/* ================= HERO SECTION ================= */
 .hero {
-    background: #e8dbb8;
+    background: #e8dbb8; /* Kuning Krem Melengkung */
     border-radius: 30px;
     padding: 50px 35px;
     margin-bottom: 50px;
@@ -150,7 +151,7 @@ nav a:hover {
     font-size: 12px;
     letter-spacing: 3px;
     font-weight: bold;
-    text-transform: uppercase; /* KAPITAL */
+    text-transform: uppercase;
 }
 
 .hero h2 {
@@ -160,15 +161,19 @@ nav a:hover {
     margin: 10px 0;
     position: relative;
     z-index: 1;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .hero p {
     color: #263328;
     position: relative;
     z-index: 1;
+    font-size: 15px;
 }
 
-/* JUDUL SECTION KAPITAL */
+/* ================= JUDUL SECTION KAPITAL ================= */
 section {
     margin-bottom: 50px;
 }
@@ -182,17 +187,18 @@ section {
 
 .section-title span {
     color: #1e3a21;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 18px;
 }
 
 .section-title h2 {
     color: #1e3a21;
-    text-transform: uppercase; /* JUDUL SECTION JADI KAPITAL */
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; /* JUDUL SECTION KAPITAL */
+    font-weight: 800;
 }
 
-/* ABOUT SECTION */
+/* ================= ABOUT SECTION ================= */
 .about-box {
     background: #ffffff;
     padding: 32px;
@@ -201,7 +207,11 @@ section {
     border-left: 6px solid #1e3a21;
 }
 
-/* GALERI KARYA CARDS */
+.about-box p {
+    font-size: 15px;
+}
+
+/* ================= GALERI KARYA CARDS ================= */
 .kumpulan-kartu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -221,19 +231,27 @@ section {
 .kartu-item:hover {
     transform: translateY(-8px);
     box-shadow: 0 18px 35px rgba(30, 58, 33, 0.12);
-    border-top-color: #1e3a21; /* Berubah warna saat di-hover */
+    border-top-color: #1e3a21;
 }
 
 .kartu-item .nomor {
-    font-weight: bold;
+    font-weight: 800;
     color: #1e3a21;
+    font-size: 14px;
 }
 
 .kartu-item h4 {
     color: #1e3a21;
     margin: 8px 0;
-    text-transform: uppercase; /* KAPITAL */
     font-size: 15px;
+    text-transform: uppercase; /* JUDUL KARTU KAPITAL */
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.kartu-item p {
+    font-size: 13.5px;
+    color: #4a5a4c;
 }
 
 .label-kategori {
@@ -243,12 +261,13 @@ section {
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 11px;
-    font-weight: bold;
-    margin-top: 5px;
-    text-transform: uppercase; /* KAPITAL */
+    font-weight: 800;
+    margin-top: 8px;
+    text-transform: uppercase; /* LABEL KAPITAL */
+    letter-spacing: 1px;
 }
 
-/* CONTACT SECTION */
+/* ================= CONTACT SECTION ================= */
 .contact-box {
     background: #e8dbb8;
     color: #1e3a21;
@@ -273,9 +292,11 @@ section {
 
 .contact-box p {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 800;
     position: relative;
     z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .github-button {
@@ -285,14 +306,14 @@ section {
     padding: 14px 32px;
     border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 800;
     margin-top: 15px;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
-    text-transform: uppercase; /* KAPITAL */
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-size: 13px;
+    text-transform: uppercase; /* TOMBOL KAPITAL */
 }
 
 .github-button:hover {
@@ -301,30 +322,38 @@ section {
     box-shadow: 0 8px 20px rgba(30, 58, 33, 0.2);
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
     background: #162b18;
     color: #dce5da;
     text-align: center;
-    padding: 30px;
+    padding: 35px 20px;
+    font-size: 13px;
 }
 
 footer a {
     color: #e8dbb8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .status-ujian {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     display: inline-block;
-    padding: 6px 14px;
+    padding: 6px 16px;
     border-radius: 20px;
-    margin-bottom: 10px;
-    font-size: 12px;
-    text-transform: uppercase; /* KAPITAL */
-    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-/* RESPONSIVE UNTUK HP */
+/* ================= RESPONSIVE HP ================= */
 @media (max-width: 650px) {
     .kumpulan-kartu {
         grid-template-columns: 1fr;
@@ -335,6 +364,6 @@ footer a {
     }
 
     .hero h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
