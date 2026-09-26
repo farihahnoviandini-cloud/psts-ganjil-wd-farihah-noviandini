@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- METADATA UTAMA WEBSITE -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website Portofolio PSTS Ganjil Web Design - FARIHAH NOVIANDINI Kelas X.R-5">
+    <meta name="description" content="Website Portofolio PSTS Ganjil Web Design - FARIHAH NOVIANDINI">
     <meta name="keywords" content="Portfolio, Web Design, HTML, CSS, GitHub Pages, PSTS Ganjil">
     <meta name="author" content="Farihah Noviandini">
+    
     <title>FARIHAH NOVIANDINI | PSTS WEB DESIGN</title>
     
-    <!-- MENGHUBUNGKAN DENGAN FILE STYLESHEET CSS (DILENGKAPI TRIK ANTI-CACHE ?v=999) -->
-    <link rel="stylesheet" href="style.css?v=999">
+    <!-- PANGGILAN FILE CSS UTAMA (ANTI CACHE) -->
+    <link rel="stylesheet" href="style.css?v=3000">
 </head>
 <body>
 
-    <!-- ========================================================= -->
-    <!-- 1. HEADER UTAMA & NAVIGASI MENU                           -->
-    <!-- ========================================================= -->
+    <!-- =================================================================== -->
+    <!-- 1. HEADER UTAMA & NAVIGASI MENU                                     -->
+    <!-- =================================================================== -->
     <header>
         <div class="header-inner">
             <p class="small-title">MY MINI PORTFOLIO</p>
@@ -23,7 +25,6 @@
             <h3 class="text-uppercase">KELAS X.R-5</h3>
             <div class="header-line"></div>
             
-            <!-- NAVIGASI MENU DENGAN EFEK GLASS -->
             <nav class="glass-nav">
                 <a href="#tentang" class="nav-btn">Tentang</a>
                 <a href="#galeri" class="nav-btn">Galeri Karya</a>
@@ -32,80 +33,91 @@
         </div>
     </header>
 
-    <!-- ========================================================= -->
-    <!-- 2. WADAH KONTEN UTAMA WEBSITE                             -->
-    <!-- ========================================================= -->
+    <!-- =================================================================== -->
+    <!-- 2. WADAH KONTEN UTAMA WEBSITE                                       -->
+    <!-- =================================================================== -->
     <main class="container">
+        <div class="sections-wrapper">
 
-        <!-- SECTION 01: TENTANG SAYA -->
-        <section id="tentang" class="content-section glass-box">
-            <h2 class="section-title">Tentang Saya</h2>
-            <div class="accent-line"></div>
-            
-            <p class="section-text">
-                Halo, nama saya <strong class="text-uppercase">FARIHAH NOVIANDINI</strong> dari kelas X.R-5. Saya sedang mempelajari Web Design untuk memahami cara membuat website yang terstruktur, rapi, dan estetis menggunakan HTML dan CSS.
-            </p>
-            
-            <p class="section-text">
-                Target saya dalam kegiatan Penilaian Sumatif Tengah Semester (PSTS) ini adalah mendapatkan nilai yang optimal, memahami struktur HTML secara mendalam, serta mampu membuat tampilan website yang menarik, responsif, dan terstruktur dengan baik.
-            </p>
-        </section>
-
-        <!-- SECTION 02: GALERI KARYA -->
-        <section id="galeri" class="content-section glass-box">
-            <h2 class="section-title">Galeri Karya</h2>
-            <div class="accent-line"></div>
-            
-            <div class="card-list">
-                
-                <!-- KARTU PROYEK 1 -->
-                <article class="card glass-card">
-                    <h4>Website Profil Sederhana</h4>
-                    <p>Membuat halaman profil sederhana dengan struktur HTML yang teratur, bersih, dan semantik sesuai standar web modern.</p>
-                    <span class="tag">HTML</span>
-                </article>
-
-                <!-- KARTU PROYEK 2 -->
-                <article class="card glass-card">
-                    <h4>Desain & Styling Tampilan Website</h4>
-                    <p>Mengatur warna, tata letak, typography, serta gaya tampilan halaman menggunakan CSS secara presisi dengan gaya Glassmorphism.</p>
-                    <span class="tag">CSS</span>
-                </article>
-
-                <!-- KARTU PROYEK 3 -->
-                <article class="card glass-card">
-                    <h4>Integrasi Git & GitHub Pages</h4>
-                    <p>Mempelajari pengelolaan versi kode (version control), commit, push repository, dan publikasi website secara live via GitHub Pages.</p>
-                    <span class="tag">Git & GitHub</span>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- SECTION 03: KONTAK SAYA -->
-        <section id="kontak" class="content-section glass-box">
-            <div class="contact-card">
-                <h2 class="section-title">Kontak</h2>
+            <!-- ----------------------------------------------------------- -->
+            <!-- SECTION 01: TENTANG SAYA                                    -->
+            <!-- ----------------------------------------------------------- -->
+            <section id="tentang" class="content-section glass-box">
+                <h2 class="section-title">Tentang Saya</h2>
                 <div class="accent-line"></div>
+                
                 <p class="section-text">
-                    Kamu dapat mengunjungi akun GitHub saya untuk melihat berbagai project yang telah saya selesaikan selama pembelajaran Web Design.
+                    Halo, nama saya <strong class="text-uppercase">FARIHAH NOVIANDINI</strong> dari kelas X.R-5. Saya sedang mempelajari Web Design untuk memahami cara membuat website yang terstruktur, rapi, dan estetis menggunakan HTML dan CSS.
                 </p>
-                <a href="https://github.com/farihahnoviandini-cloud" target="_blank" rel="noopener noreferrer" class="btn-github glass-btn">Kunjungi GitHub Saya</a>
-            </div>
-        </section>
+                
+                <p class="section-text">
+                    Target saya dalam kegiatan Penilaian Sumatif Tengah Semester (PSTS) ini adalah mendapatkan nilai yang optimal, memahami struktur HTML secara mendalam, serta mampu membuat tampilan website yang menarik dan responsif.
+                </p>
+            </section>
 
+            <!-- ----------------------------------------------------------- -->
+            <!-- SECTION 02: GALERI KARYA                                    -->
+            <!-- ----------------------------------------------------------- -->
+            <section id="galeri" class="content-section glass-box">
+                <h2 class="section-title">Galeri Karya</h2>
+                <div class="accent-line"></div>
+                
+                <div class="card-list">
+                    
+                    <!-- KARTU KARYA 1 -->
+                    <article class="card glass-card">
+                        <h4>Website Profil Sederhana</h4>
+                        <p>Membuat halaman profil sederhana dengan struktur HTML yang teratur, bersih, dan semantik sesuai standar web modern.</p>
+                        <span class="tag">HTML</span>
+                    </article>
+
+                    <!-- KARTU KARYA 2 -->
+                    <article class="card glass-card">
+                        <h4>Desain & Styling Website</h4>
+                        <p>Mengatur warna, tata letak, typography, serta gaya tampilan halaman menggunakan CSS secara presisi dengan gaya Glassmorphism.</p>
+                        <span class="tag">CSS</span>
+                    </article>
+
+                    <!-- KARTU KARYA 3 -->
+                    <article class="card glass-card">
+                        <h4>Integrasi Git & GitHub Pages</h4>
+                        <p>Mempelajari pengelolaan versi kode (version control), commit, push repository, dan publikasi website secara live via GitHub Pages.</p>
+                        <span class="tag">Git & GitHub</span>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- ----------------------------------------------------------- -->
+            <!-- SECTION 03: KONTAK SAYA                                     -->
+            <!-- ----------------------------------------------------------- -->
+            <section id="kontak" class="content-section glass-box">
+                <div class="contact-card">
+                    <h2 class="section-title">Kontak</h2>
+                    <div class="accent-line"></div>
+                    
+                    <p class="section-text">
+                        Kamu dapat mengunjungi akun GitHub saya untuk melihat berbagai project yang telah saya selesaikan selama pembelajaran Web Design.
+                    </p>
+                    
+                    <a href="https://github.com/farihahnoviandini-cloud" target="_blank" rel="noopener noreferrer" class="btn-github glass-btn">
+                        Kunjungi GitHub Saya
+                    </a>
+                </div>
+            </section>
+
+        </div>
     </main>
 
-    <!-- ========================================================= -->
-    <!-- 3. FOOTER HAK CIPTA & STATUS VERIFIKASI                   -->
-    <!-- ========================================================= -->
+    <!-- =================================================================== -->
+    <!-- 3. FOOTER UTAMA                                                     -->
+    <!-- =================================================================== -->
     <footer>
         <p class="status-ujian">&#10003; PSTS GANJIL WEB DESIGN &mdash; PROJECT VERIFIED</p>
-        <p class="copyright">&copy; 2026 FARIHAH NOVIANDINI | KELAS X.R-5. Semua hak cipta dilindungi.</p>
+        <p class="copyright">&copy; 2026 FARIHAH NOVIANDINI. Semua hak cipta dilindungi.</p>
         
         <div class="footer-badges">
-            <span class="badge glass-badge">Status: Terverifikasi</span>
-            <span class="badge glass-badge">Nilai: Optimal</span>
+            <span class="badge glass-badge">Status: Tugas Terverifikasi</span>
         </div>
     </footer>
 
