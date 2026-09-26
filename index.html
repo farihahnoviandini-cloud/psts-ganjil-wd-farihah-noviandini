@@ -3,150 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farihah Noviandini | Mini Portfolio</title>
-    <!-- Menghubungkan langsung ke file style.css -->
+    <meta name="description" content="Website Portofolio PSTS Ganjil Web Design - FARIHAH NOVIANDINI Kelas X.R-5">
+    <meta name="keywords" content="Portfolio, Web Design, HTML, CSS, GitHub Pages, PSTS Ganjil">
+    <meta name="author" content="Farihah Noviandini">
+    <title>FARIHAH NOVIANDINI | PSTS WEB DESIGN</title>
+    
+    <!-- MENGHUBUNGKAN DENGAN FILE STYLESHEET CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ================= HEADER UTAMA ================= -->
+    <!-- ========================================================= -->
+    <!-- 1. HEADER UTAMA & NAVIGASI MENU                           -->
+    <!-- ========================================================= -->
     <header>
         <div class="header-inner">
             <p class="small-title">MY MINI PORTFOLIO</p>
-
-            <h1>FARIHAH NOVIANDINI</h1>
-            <h3>KELAS X.R-5</h3>
-
-            <nav>
-                <a href="#tentang">Tentang</a>
-                <a href="#galeri-karya">Galeri Karya</a>
-                <a href="#kontak">Kontak</a>
+            <h1 class="text-uppercase">FARIHAH NOVIANDINI</h1>
+            <h3 class="text-uppercase">KELAS X.R-5</h3>
+            <div class="header-line"></div>
+            
+            <!-- NAVIGASI MENU DENGAN EFEK GLASS -->
+            <nav class="glass-nav">
+                <a href="#tentang" class="nav-btn">Tentang</a>
+                <a href="#galeri" class="nav-btn">Galeri Karya</a>
+                <a href="#kontak" class="nav-btn">Kontak</a>
             </nav>
         </div>
     </header>
 
-    <!-- ================= WADAH KONTEN UTAMA ================= -->
-    <main class="wadah-konten">
+    <!-- ========================================================= -->
+    <!-- 2. WADAH KONTEN UTAMA WEBSITE                             -->
+    <!-- ========================================================= -->
+    <main class="container">
 
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <p class="hero-small">WELCOME TO MY SPACE ✦</p>
-            <h2>CREATIVE MIND,<br>SIMPLE IDEAS.</h2>
-            <p>
-                Selamat datang di halaman mini portfolio personal saya.
-                Website ini dirancang dan dibuat sebagai proyek tugas Penilaian Tengah Semester (PSTS) Ganjil mata pelajaran Web Design.
+        <!-- SECTION 01: TENTANG SAYA -->
+        <section id="tentang" class="content-section glass-box">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="accent-line"></div>
+            
+            <p class="section-text">
+                Halo, nama saya <strong class="text-uppercase">FARIHAH NOVIANDINI</strong> dari kelas X.R-5. Saya sedang mempelajari Web Design untuk memahami cara membuat website yang terstruktur, rapi, dan estetis menggunakan HTML dan CSS.
+            </p>
+            
+            <p class="section-text">
+                Target saya dalam kegiatan Penilaian Sumatif Tengah Semester (PSTS) ini adalah mendapatkan nilai yang optimal, memahami struktur HTML secara mendalam, serta mampu membuat tampilan website yang menarik, responsif, dan terstruktur dengan baik.
             </p>
         </section>
 
-        <!-- SECTION TENTANG SAYA -->
-        <section id="tentang">
-            <div class="section-title">
-                <span>01</span>
-                <h2>TENTANG SAYA</h2>
-            </div>
-
-            <div class="about-box">
-                <p>
-                    Halo! Saya <strong>Farihah Noviandini</strong>, siswi dari kelas X.R-5.
-                    Saat ini saya sedang mendalami dasar-dasar pemograman web, khususnya dalam menggunakan HTML untuk membangun struktur halaman, CSS untuk merancang tampilan visual yang estetik, serta GitHub untuk pengelolaan repositori kode.
-                </p>
-
-                <p style="margin-top: 15px;">
-                    Melalui proyek tugas PSTS ini, saya belajar bagaimana alur pembuatan website dilakukan secara bertahap—mulai dari menyusun tata letak elemen, mengatur skema warna krem-hijau yang responsif, hingga berhasil mempublikasikan (*deploy*) website secara online agar dapat diakses oleh umum.
-                </p>
-            </div>
-        </section>
-
-        <!-- SECTION GALERI KARYA -->
-        <section id="galeri-karya">
-
-            <div class="section-title">
-                <span>02</span>
-                <h2>GALERI KARYA</h2>
-            </div>
-
-            <div class="kumpulan-kartu">
-
-                <!-- KARTU 1 -->
-                <article class="kartu-item">
-                    <div class="nomor">01</div>
-                    <span class="label-kategori">HTML5</span>
-
-                    <h4>STRUKTUR WEBSITE</h4>
-
-                    <p>
-                        Menyusun pondasi dan struktur elemen HTML yang semantik, teratur, dan mudah dibaca oleh peramban web.
-                    </p>
+        <!-- SECTION 02: GALERI KARYA -->
+        <section id="galeri" class="content-section glass-box">
+            <h2 class="section-title">Galeri Karya</h2>
+            <div class="accent-line"></div>
+            
+            <div class="card-list">
+                
+                <!-- KARTU PROYEK 1 -->
+                <article class="card glass-card">
+                    <h4>Website Profil</h4>
+                    <p>Membuat halaman profil sederhana dengan struktur HTML yang teratur, bersih, dan semantik.</p>
+                    <span class="tag">HTML</span>
                 </article>
 
-                <!-- KARTU 2 -->
-                <article class="kartu-item">
-                    <div class="nomor">02</div>
-                    <span class="label-kategori">CSS3</span>
-
-                    <h4>WEB STYLING</h4>
-
-                    <p>
-                        Mengatur tata warna krem hangat dan hijau forest, sudut membulat (*rounded corners*), serta efek bayangan modern.
-                    </p>
+                <!-- KARTU PROYEK 2 -->
+                <article class="card glass-card">
+                    <h4>Desain Tampilan Website</h4>
+                    <p>Mengatur warna, ukuran, jarak, serta gaya tampilan halaman menggunakan CSS secara presisi.</p>
+                    <span class="tag">CSS</span>
                 </article>
 
-                <!-- KARTU 3 -->
-                <article class="kartu-item">
-                    <div class="nomor">03</div>
-                    <span class="label-kategori">GITHUB</span>
-
-                    <h4>WEB PUBLISHING</h4>
-
-                    <p>
-                        Mempelajari alur kerja Git dan GitHub Pages untuk menyimpan, mengelola versi kode, serta mempublikasikan proyek.
-                    </p>
+                <!-- KARTU PROYEK 3 -->
+                <article class="card glass-card">
+                    <h4>Latihan Git dan GitHub</h4>
+                    <p>Mempelajari commit, branch, merge, dan publikasi project secara terintegrasi menggunakan GitHub.</p>
+                    <span class="tag">Git</span>
                 </article>
 
             </div>
         </section>
 
-        <!-- SECTION KONTAK -->
-        <section id="kontak">
-
-            <div class="section-title">
-                <span>03</span>
-                <h2>KONTAK</h2>
+        <!-- SECTION 03: KONTAK SAYA -->
+        <section id="kontak" class="content-section glass-box">
+            <div class="contact-card">
+                <h2 class="section-title">Kontak</h2>
+                <div class="accent-line"></div>
+                <p class="section-text">
+                    Kamu dapat mengunjungi akun GitHub saya untuk melihat project yang telah dibuat selama pembelajaran.
+                </p>
+                <a href="https://github.com/farihahnoviandini-cloud" target="_blank" rel="noopener noreferrer" class="btn-github glass-btn">Kunjungi GitHub</a>
             </div>
-
-            <div class="contact-box">
-                <p>LET'S CONNECT THROUGH GITHUB ✦</p>
-
-                <a
-                    href="https://github.com/farihahnoviandini-cloud"
-                    target="_blank"
-                    class="github-button">
-                    VISIT MY GITHUB →
-                </a>
-            </div>
-
         </section>
 
     </main>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ========================================================= -->
+    <!-- 3. FOOTER HAK CIPTA & STATUS VERIFIKASI                   -->
+    <!-- ========================================================= -->
     <footer>
-
-        <p class="status-ujian">
-            ✓ PSTS GANJIL WEB DESIGN — PROJECT VERIFIED
-        </p>
-
-        <p style="margin-top: 8px;">
-            © 2026 Farihah Noviandini | Kelas X.R-5
-        </p>
-
-        <p style="margin-top: 5px;">
-            <a href="https://github.com/farihahnoviandini-cloud" target="_blank">
-                farihahnoviandini-cloud ↗
-            </a>
-        </p>
-
+        <p class="status-ujian">&#10003; PSTS GANJIL WEB DESIGN &mdash; PROJECT VERIFIED</p>
+        <p class="copyright">&copy; 2026 FARIHAH NOVIANDINI | KELAS X.R-5. Semua hak cipta dilindungi.</p>
+        
+        <div class="footer-badges">
+            <span class="badge glass-badge">Status: Terverifikasi</span>
+            <span class="badge glass-badge">Status: Terverifikasi</span>
+        </div>
     </footer>
 
 </body>
