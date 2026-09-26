@@ -3,86 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Profil - Farihah Noviandini</title>
+    <title>Khanza Sheyla Salsabilla | Mini Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header Section -->
     <header>
-        <div class="header-content">
+        <div class="header-inner">
+            <p class="small-title">MY MINI PORTFOLIO</p>
+
             <h1>Farihah Noviandini</h1>
-            <div class="subtitle">KELAS X.R-2</div>
-            <div class="accent-line"></div>
-            
-            <nav class="nav-buttons">
-                <a href="#tentang" class="btn-nav">Tentang</a>
-                <a href="#galeri" class="btn-nav">Galeri Karya</a>
-                <a href="#kontak" class="btn-nav">Kontak</a>
+            <h3>X.R-5</h3>
+
+            <nav>
+                <a href="#tentang">Tentang</a>
+                <a href="#galeri-karya">Galeri Karya</a>
+                <a href="#kontak">Kontak</a>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main>
-        <!-- Tentang Saya -->
+    <main class="wadah-konten">
+
+        <section class="hero">
+            <p class="hero-small">WELCOME TO MY SPACE ✦</p>
+            <h2>Creative mind,<br>simple ideas.</h2>
+            <p>
+                Selamat datang di mini portfolio saya.
+                Website ini dibuat sebagai bagian dari PSTS Ganjil Web Design.
+            </p>
+        </section>
+
         <section id="tentang">
-            <h2 class="section-title">Tentang Saya</h2>
-            <div class="accent-line"></div>
-            
-            <p class="about-text">
-                Halo, nama saya Farihah Noviandini dari kelas X.R-5. Saya sedang mempelajari Web Design untuk memahami cara membuat website menggunakan HTML dan CSS.
-            </p>
-            <p class="about-text">
-                Target saya dalam PSTS ini adalah mendapatkan nilai yang baik, memahami struktur HTML, dan mampu membuat tampilan website yang menarik serta terstruktur.
-            </p>
-        </section>
+            <div class="section-title">
+                <span>01</span>
+                <h2>Tentang Saya</h2>
+            </div>
 
-        <!-- Galeri Karya -->
-        <section id="galeri">
-            <h2 class="section-title">Galeri Karya</h2>
-            <div class="accent-line"></div>
+            <div class="about-box">
+                <p>
+                    Halo! Saya Farihah Noviandini dari kelas X.R-5.
+                    Saya sedang belajar membuat website menggunakan HTML,
+                    CSS, dan GitHub.
+                </p>
 
-            <div class="cards-grid">
-                <div class="card">
-                    <h3>Website Profil</h3>
-                    <p>Membuat halaman profil sederhana dengan struktur HTML yang teratur.</p>
-                    <div class="card-tech">HTML</div>
-                </div>
-
-                <div class="card">
-                    <h3>Desain Tampilan Website</h3>
-                    <p>Mengatur warna, ukuran, jarak, dan tampilan halaman menggunakan CSS.</p>
-                    <div class="card-tech">CSS</div>
-                </div>
-
-                <div class="card">
-                    <h3>Latihan Git dan GitHub</h3>
-                    <p>Mempelajari commit, branch, merge, dan publikasi project menggunakan GitHub.</p>
-                    <div class="card-tech">Git</div>
-                </div>
+                <p>
+                    Melalui tugas PSTS ini, saya ingin memahami proses
+                    pembuatan website dari awal sampai dapat dipublikasikan.
+                    Target saya adalah mendapatkan hasil terbaik dengan
+                    mengerjakan setiap tahap dengan teliti.
+                </p>
             </div>
         </section>
 
-        <!-- Kontak -->
+        <section id="galeri-karya">
+
+            <div class="section-title">
+                <span>02</span>
+                <h2>Galeri Karya</h2>
+            </div>
+
+            <div class="kumpulan-kartu">
+
+                <article class="kartu-item">
+                    <div class="nomor">01</div>
+                    <span class="label-kategori">HTML</span>
+
+                    <h4>Struktur Website</h4>
+
+                    <p>
+                        Membuat struktur halaman website menggunakan
+                        elemen HTML yang semantik dan teratur.
+                    </p>
+                </article>
+
+                <article class="kartu-item">
+                    <div class="nomor">02</div>
+                    <span class="label-kategori">CSS</span>
+
+                    <h4>Web Styling</h4>
+
+                    <p>
+                        Mengatur warna, jarak, card, shadow, dan
+                        tampilan website agar terlihat lebih menarik.
+                    </p>
+                </article>
+
+                <article class="kartu-item">
+                    <div class="nomor">03</div>
+                    <span class="label-kategori">GITHUB</span>
+
+                    <h4>Web Publishing</h4>
+
+                    <p>
+                        Mempelajari Git dan GitHub untuk menyimpan,
+                        mengelola, serta mempublikasikan website.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
         <section id="kontak">
-            <div class="contact-card">
-                <h2 class="section-title">Kontak</h2>
-                <div class="accent-line"></div>
-                
-                <p>Kamu dapat mengunjungi akun GitHub saya untuk melihat project yang telah dibuat.</p>
-                <a href="https://github.com/farihahnoviandini-cloud" target="_blank" class="btn-github">Kunjungi GitHub</a>
+
+            <div class="section-title">
+                <span>03</span>
+                <h2>Kontak</h2>
             </div>
+
+            <div class="contact-box">
+                <p>Let's connect through GitHub ✦</p>
+
+                <a
+                    href="https://github.com/"
+                    target="_blank"
+                    class="github-button">
+                    Visit My GitHub →
+                </a>
+            </div>
+
         </section>
+
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Farihah Noviandini. Semua hak cipta dilindungi.</p>
-        <div class="footer-badges">
-            <div class="badge">GitHub Saya</div>
-            <div class="badge">Status: Terverifikasi</div>
-        </div>
+
+        <p class="status-ujian">
+            ✓ PSTS Ganjil Web Design — Project Verified
+        </p>
+
+        <p>
+            © 2026 Farihah Noviandini. All rights deserved.
+        </p>
+
+        <a href="https://github.com/" target="_blank">
+            GitHub ↗
+        </a>
+
     </footer>
 
 </body>
